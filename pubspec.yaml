@@ -60,12 +60,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/front_page_bg.png
-    - assets/images/escape_the_infinite_space.png
-    - assets/images/big_earth.png
-    - assets/images/heading1.png
-    - assets/images/fire_meteroid.gif
-    - assets/images/small_earth.png
+    - assets/images/front_page/front_page_bg.png
+    - assets/images/front_page/escape_the_infinite_space.png
+    - assets/images/front_page/big_earth.png
+    - assets/images/front_page/heading1.png
+    - assets/images/front_page/fire_meteroid.gif
+    - assets/images/front_page/small_earth.png
+    - assets/images/front_page/telescope.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
