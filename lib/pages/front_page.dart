@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/button_widget.dart';
+import 'package:zero_gravity/widgets/button_widget.dart';
 
 class FrontPage extends StatefulWidget {
   const FrontPage({Key? key}) : super(key: key);
@@ -64,7 +64,10 @@ class _FrontPageState extends State<FrontPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ButtonWidget(
-                      onPressed: () {  },
+                      onPressed: () { 
+                        
+                        
+                      },
                       title: 'EXPLORE',
                     ),
                     const SizedBox(

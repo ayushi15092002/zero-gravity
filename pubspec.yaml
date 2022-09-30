@@ -30,6 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^3.0.1
+  audioplayers: ^0.15.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -67,6 +68,13 @@ flutter:
     - assets/images/front_page/fire_meteroid.gif
     - assets/images/front_page/small_earth.png
     - assets/images/front_page/telescope.gif
+    - assets/images/level_page/level_page_bg.gif
+    - assets/images/level_page/level_page_bg_hor.png
+    - assets/images/level_page/level_0.png
+    - assets/images/level_page/level_1.png
+    - assets/images/level_page/level_2.png
+    - assets/images/level_page/level_3.png
+    - assets/images/level_page/level_4.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
