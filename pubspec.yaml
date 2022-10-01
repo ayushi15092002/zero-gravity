@@ -29,8 +29,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_fonts: ^3.0.1
-  audioplayers: ^0.15.1
+  google_fonts: ^3.0.10
+  animated_text_kit: ^4.2.1
+#  audioplayers: ^0.20.1
+  assets_audio_player: ^3.0.3+3
+#  video_player: ^0.10.5+2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -64,17 +67,22 @@ flutter:
     - assets/images/front_page/front_page_bg.png
     - assets/images/front_page/escape_the_infinite_space.png
     - assets/images/front_page/big_earth.png
-    - assets/images/front_page/heading1.png
     - assets/images/front_page/fire_meteroid.gif
     - assets/images/front_page/small_earth.png
     - assets/images/front_page/telescope.gif
-    - assets/images/level_page/level_page_bg.gif
     - assets/images/level_page/level_page_bg_hor.png
     - assets/images/level_page/level_0.png
     - assets/images/level_page/level_1.png
     - assets/images/level_page/level_2.png
     - assets/images/level_page/level_3.png
     - assets/images/level_page/level_4.png
+    - assets/images/level_0/level_0_bg.gif
+    - assets/sound/level_0_scientist.mp4
+    - assets/images/level_0/scientist.png
+    - assets/images/level_0/next_button.png
+    - assets/images/level_0/scientist.gif
+    - assets/sound/bg.mp3
+    - assets/images/level_0/level_0_last_video.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

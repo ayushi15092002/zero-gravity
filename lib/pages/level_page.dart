@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/button_widget.dart';
 import 'package:flutter/services.dart';
+import 'level_0/level_0_main.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
 
 class LevelPage extends StatefulWidget {
   const LevelPage({Key? key}) : super(key: key);
@@ -11,11 +13,19 @@ class LevelPage extends StatefulWidget {
 
 class _LevelPageState extends State<LevelPage> {
   var size, height, width;
+  AssetsAudioPlayer audioPlayer = AssetsAudioPlayer();
   @override
   void initState() {
     WidgetsFlutterBinding.ensureInitialized();
     SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft,DeviceOrientation.landscapeRight]);
+    audioPlayer.open(Audio('assets/sound/bg.mp3'),autoStart: true,showNotification: true);
+    audioPlayer.play();
     super.initState();
+  }
+  @override
+  void dispose() {
+    audioPlayer.stop();
+    super.dispose();
   }
 
   @override
@@ -38,6 +48,12 @@ class _LevelPageState extends State<LevelPage> {
                       // left: 0,
                       // top: 0,
                       child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const LevelPage0()),
+                          );
+                        },
                           child: Image.asset(
                             "assets/images/level_page/level_0.png",
                             height: 150,

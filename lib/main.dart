@@ -3,6 +3,7 @@ import 'package:zero_gravity/pages/front_page.dart';
 import 'package:zero_gravity/pages/level_page.dart';
 
 void main() {
+
   runApp(const MyApp());
 }
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LevelPage(),
+      home: const FrontPage(),
     );
   }
 }
